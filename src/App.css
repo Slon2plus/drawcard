@@ -5,7 +5,9 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background: #006571;
+  background: #006571
+    url(./img/poker-table-background-in-green-color_47243-1067.jpg) no-repeat;
+  background-size: cover;
 }
 
 .cart {
