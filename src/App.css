@@ -1,0 +1,47 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #006571;
+}
+
+.cart {
+  width: 220px;
+  height: 337px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.front,
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: 1s;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.front {
+  background: #fff url(./img/1012350994.jpg) no-repeat;
+  background-size: cover;
+}
+
+.back {
+  background: black url(./img/Без\ названия.jpg) no-repeat;
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+.cart:hover .front {
+  transform: rotateY(180deg);
+}
+.cart:hover .back {
+  transform: rotateY(360deg);
+}
